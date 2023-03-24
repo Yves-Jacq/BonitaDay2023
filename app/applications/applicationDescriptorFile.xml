@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="Prets" version="1.0" profile="User" homePage="task" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Prets</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_tasklist" token="task"/>
+            <applicationPage customPage="custompage_processlistBonita" token="process"/>
+            <applicationPage customPage="custompage_SuiviDemandes3" token="menu"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu applicationPage="task">
+                <displayName>Mes taches</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="process">
+                <displayName>Effectuer une demande</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="menu">
+                <displayName>Liste des demandes</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>
