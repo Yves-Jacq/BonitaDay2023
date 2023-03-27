@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="adminAppEE" version="4.2" profile="Administrator" homePage="admin-monitoring" state="ACTIVATED" layout="custompage_BonitaLayoutV11" theme="custompage_themeBonita">
+        <displayName>Bonita Administrator Application</displayName>
+        <description>This application allows to deploy and manage all the elements of Bonita projects.</description>
+        <iconPath>bonita-admin-application.png</iconPath>
+        <applicationPages>
+            <applicationPage customPage="custompage_adminUserDetailsBonita" token="admin-user-details"/>
+            <applicationPage customPage="custompage_adminProcessDetailsBonita" token="admin-process-details"/>
+            <applicationPage customPage="custompage_adminProcessVisuBonitaV1" token="admin-process-visu"/>
+            <applicationPage customPage="custompage_adminCaseVisuBonitaV1" token="admin-case-visu"/>
+            <applicationPage customPage="custompage_adminCaseDetailsBonitaV9" token="admin-case-details"/>
+            <applicationPage customPage="custompage_adminTaskDetailsBonitaV3" token="admin-task-details"/>
+            <applicationPage customPage="custompage_adminProcessListBonitaV4" token="admin-process-list"/>
+            <applicationPage customPage="custompage_adminCaseListBonitaV8" token="admin-case-list"/>
+            <applicationPage customPage="custompage_adminMonitoringBonita" token="admin-monitoring"/>
+            <applicationPage customPage="custompage_adminApplicationListBonita" token="admin-application-list"/>
+            <applicationPage customPage="custompage_adminApplicationDetailsBonita" token="admin-application-details"/>
+            <applicationPage customPage="custompage_adminBDMBonita" token="admin-bdm"/>
+            <applicationPage customPage="custompage_adminLicenseBonita" token="admin-license"/>
+            <applicationPage customPage="custompage_adminTaskListBonitaV4" token="admin-task-list"/>
+            <applicationPage customPage="custompage_adminUserListBonitaV4" token="admin-user-list"/>
+            <applicationPage customPage="custompage_adminGroupListBonitaV4" token="admin-group-list"/>
+            <applicationPage customPage="custompage_adminRoleListBonitaV4" token="admin-role-list"/>
+            <applicationPage customPage="custompage_adminProfileListBonitaV5" token="admin-profile-list"/>
+            <applicationPage customPage="custompage_adminInstallExportOrganizationBonitaV1" token="admin-install-export-organization"/>
+            <applicationPage customPage="custompage_adminResourceListBonitaV7" token="admin-resource-list"/>
+        </applicationPages>
+        <applicationMenus>
+            <applicationMenu>
+                <displayName>BPM</displayName>
+                <applicationMenus>
+                    <applicationMenu applicationPage="admin-monitoring">
+                        <displayName>Monitoring</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-process-list">
+                        <displayName>Processes</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-case-list">
+                        <displayName>Cases</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-task-list">
+                        <displayName>Tasks</displayName>
+                    </applicationMenu>
+                </applicationMenus>
+            </applicationMenu>
+            <applicationMenu>
+                <displayName>Organization</displayName>
+                <applicationMenus>
+                    <applicationMenu applicationPage="admin-user-list">
+                        <displayName>Users</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-group-list">
+                        <displayName>Groups</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-role-list">
+                        <displayName>Roles</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-install-export-organization">
+                        <displayName>Install / Export</displayName>
+                    </applicationMenu>
+                    <applicationMenu applicationPage="admin-profile-list">
+                        <displayName>Profiles</displayName>
+                    </applicationMenu>
+                </applicationMenus>
+            </applicationMenu>
+            <applicationMenu applicationPage="admin-bdm">
+                <displayName>BDM</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="admin-resource-list">
+                <displayName>Resources</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="admin-application-list">
+                <displayName>Applications</displayName>
+            </applicationMenu>
+            <applicationMenu applicationPage="admin-license">
+                <displayName>License</displayName>
+            </applicationMenu>
+        </applicationMenus>
+    </application>
+</applications>

@@ -1,0 +1,11 @@
+<div ng-show="featureIsAvailable" class="zoom-btns-container">
+    <button type="button" class="btn btn-primary zoom-btn" ng-click="ctrl.zoomIn()">
+        <span class="glyphicon glyphicon-zoom-in"></span>
+    </button>
+    <button type="button" class="btn btn-primary zoom-btn" ng-click="ctrl.zoomOut()">
+        <span class="glyphicon glyphicon-zoom-out"></span>
+    </button>
+    <button class="btn btn-primary zoom-btn" ng-click="ctrl.fitCenter()" translate>Reset</button>
+</div>
+<div id="bpmn-container" ng-show="featureIsAvailable" class="col-12 bpmn-container"></div>
+<p class="alert alert-info" ng-show="!featureIsAvailable" translate>Using this feature requires a customer license.</p>

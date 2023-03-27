@@ -1,0 +1,172 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "id" : "fragmentProcessVisuBonitaV1",
+  "name" : "fragmentProcessVisuBonitaV1",
+  "lastUpdate" : 1678382892060,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "d-flex bpmn-visu-container"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "value" : {
+            "type" : "constant",
+            "value" : "This is the initial value"
+          },
+          "color" : {
+            "type" : "constant",
+            "value" : "RebeccaPurple"
+          },
+          "background" : {
+            "type" : "constant",
+            "value" : "Yellow"
+          },
+          "diagram" : {
+            "type" : "variable",
+            "value" : "currentDiagram"
+          },
+          "caseInfo" : {
+            "type" : "variable",
+            "value" : "currentCaseInfo"
+          },
+          "flowNodesInfo" : {
+            "type" : "variable",
+            "value" : "flowNodesInfo"
+          },
+          "processName" : {
+            "type" : "variable",
+            "value" : "processName"
+          },
+          "activeFeatures" : {
+            "type" : "variable",
+            "value" : "featuresStatus"
+          }
+        },
+        "reference" : "2e792d9d-ba83-43e2-85fb-d6ad3aa0132f",
+        "hasValidationError" : false,
+        "id" : "customBpmnVisuV1"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "76d89b21-6a30-46ca-a0fd-91c1ebdb2c5f",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a1057704-ca23-4eb6-ab72-96ee21c28965",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "currentDiagram" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/diagram/{{processId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "allCaseInfo" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"id\": 3001,",
+        "    \"flowNodeStatesCounters\": {",
+        "        \"Complete quotation\": {",
+        "            \"failed\": 1,",
+        "            \"executing\": 1,",
+        "            \"completing\": 1,",
+        "            \"initializing\": 1,",
+        "            \"ready\": 1,",
+        "            \"waiting\": 1,",
+        "            \"completed\": 1,",
+        "            \"cancelled\": 1,",
+        "            \"skipped\": 1",
+        "        },",
+        "        \"Create quotation for each selected suppliers\": {",
+        "            \"completed\": 1",
+        "        }",
+        "    }",
+        "    ",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "flowNodesInfo" : {
+      "type" : "url",
+      "value" : [
+        "{{callFlowNodeInfo}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "process" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process/{{processId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "processName" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.process) {",
+        "    return undefined;    ",
+        "}",
+        "",
+        "return $data.process.name;"
+      ],
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "featuresStatus" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/feature?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "callFlowNodeInfo" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.currentDiagram && $data.featuresStatus && $data.process) {",
+        "    return \"../API/bpm/processInfo/\" + $data.processId;",
+        "}"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "webResources" : [ ],
+  "type" : "fragment"
+}

@@ -1,0 +1,20 @@
+== Migration notes (March 27, 2023 at 4:23:41 PM CEST)
+
+=== Updates
+
+* `bonita-runtime.version` property has been updated from `7.13.1` to `8.0.0.beta-01`.
+
+== Migration notes (10 août 2021 à 11:24:36 CEST)
+
+=== Updates
+
+* Groovy version has been updated from `2.4.x` to `3.0.8`.
+Check the https://groovy-lang.org/releasenotes/groovy-3.0.html[release note] for more information about the breaking changes.
+* `spock-core` version has been updated from `${spock-core.version}` to `2.0-groovy-3.0`.
+For more information check the https://spockframework.org/spock/docs/2.0/migration_guide.html#_migration_guide_2_0[migration guide].
+* `maven-surefire-plugin` plugin has been updated from ${maven-surefire-plugin.version} to 2.22.2
+* Java version has been updated from `${java.version}` to `11`
+* Use the managed version provided by the runtime BOM for `or.bonitasoft.web:bonita-web-extensions`
+* Use the managed version provided by the runtime BOM for `javax.servlet:javax.servlet-api`
+* Use the managed version provided by the runtime BOM for `org.slf4j:slf4j-api`
+

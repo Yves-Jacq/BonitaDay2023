@@ -1,0 +1,194 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "id" : "fragmentCaseVisuBonitaV1",
+  "name" : "fragmentCaseVisuBonitaV1",
+  "lastUpdate" : 1678382886191,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "d-flex bpmn-visu-container"
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "value" : {
+            "type" : "constant",
+            "value" : "This is the initial value"
+          },
+          "color" : {
+            "type" : "constant",
+            "value" : "RebeccaPurple"
+          },
+          "background" : {
+            "type" : "constant",
+            "value" : "Yellow"
+          },
+          "diagram" : {
+            "type" : "variable",
+            "value" : "currentDiagram"
+          },
+          "caseInfo" : {
+            "type" : "variable",
+            "value" : "currentCaseInfo"
+          },
+          "flowNodesInfo" : {
+            "type" : "variable",
+            "value" : "flowNodesInfo"
+          },
+          "processName" : {
+            "type" : "variable",
+            "value" : "processName"
+          },
+          "activeFeatures" : {
+            "type" : "variable",
+            "value" : "featuresStatus"
+          }
+        },
+        "reference" : "3d488dfc-a624-4777-9d95-d64a04c4f256",
+        "hasValidationError" : false,
+        "id" : "customBpmnVisuV1"
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "76d89b21-6a30-46ca-a0fd-91c1ebdb2c5f",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a1057704-ca23-4eb6-ab72-96ee21c28965",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "currentDiagram" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/diagram/{{processId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "allCaseInfo" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"id\": 3001,",
+        "    \"flowNodeStatesCounters\": {",
+        "        \"Complete quotation\": {",
+        "            \"failed\": 1,",
+        "            \"executing\": 1,",
+        "            \"completing\": 1,",
+        "            \"initializing\": 1,",
+        "            \"ready\": 1,",
+        "            \"waiting\": 1,",
+        "            \"completed\": 1,",
+        "            \"cancelled\": 1,",
+        "            \"skipped\": 1",
+        "        },",
+        "        \"Create quotation for each selected suppliers\": {",
+        "            \"completed\": 1",
+        "        }",
+        "    }",
+        "    ",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "flowNodesInfo" : {
+      "type" : "url",
+      "value" : [
+        "{{callFlowNodeInfo}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "case" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{caseId}}?d=processDefinitionId"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "processName" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.case) {",
+        "    return $data.case.processDefinitionId.name;",
+        "} else if ($data.archivedCase && $data.archivedCase[0]) {",
+        "    return $data.archivedCase[0].processDefinitionId.name;",
+        "}",
+        "return undefined;"
+      ],
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : [
+        "",
+        "if ($data.case) {",
+        "    return $data.case.processDefinitionId.id;",
+        "} else if ($data.archivedCase && $data.archivedCase[0]) {",
+        "    return $data.archivedCase[0].processDefinitionId.id",
+        "} else {",
+        "    return undefined;",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "featuresStatus" : {
+      "type" : "url",
+      "value" : [
+        "../API/system/feature?p=0&c=100"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    },
+    "callFlowNodeInfo" : {
+      "type" : "expression",
+      "value" : [
+        "if ($data.currentDiagram && $data.featuresStatus && ($data.case || ($data.archivedCase && $data.archivedCase.length !== 0))) {",
+        "    return \"../API/bpm/caseInfo/\" + $data.caseId;",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "archivedCase" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/archivedCase/?f=sourceObjectId={{caseId}}&d=processDefinitionId"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "webResources" : [ ],
+  "type" : "fragment"
+}

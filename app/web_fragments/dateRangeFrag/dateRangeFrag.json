@@ -1,0 +1,429 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.2",
+  "id" : "dateRangeFrag",
+  "name" : "dateRangeFrag",
+  "lastUpdate" : 1679927019967,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "<pre>{{\"You need to add momentjs as asset in the parent page/form\" | translate}} \nhttps://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js\n</pre>"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "8b3ed480-2aa9-42c4-ae78-b0bdbbcf2ca4",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
+        "reference" : "fa61783c-d158-482d-af5f-5be3217e086d",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "a26c90c5-24ee-4d12-9fb5-1c8990452b2b",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "date-time-input between"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "inlineInput" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Between"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "withTimeZone" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "startDate"
+                  },
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "dd/MM/yyyy"
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "dd/mm/yyyy"
+                  },
+                  "timeFormat" : {
+                    "type" : "constant",
+                    "value" : "h:mm:ss a"
+                  },
+                  "timePlaceholder" : {
+                    "type" : "interpolation",
+                    "value" : "h:mm:ss a"
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "todayLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Today"
+                  },
+                  "showNow" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "nowLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Now"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  }
+                },
+                "reference" : "57e1f7e1-f746-44ba-811d-1574bf384bb8",
+                "hasValidationError" : false,
+                "id" : "pbDateTimePicker"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 6,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "date-time-input and"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "readOnly" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "required" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "inlineInput" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "And"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "withTimeZone" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "endDate"
+                  },
+                  "dateFormat" : {
+                    "type" : "constant",
+                    "value" : "dd/MM/yyyy"
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : "dd/mm/yyyy"
+                  },
+                  "timeFormat" : {
+                    "type" : "constant",
+                    "value" : "h:mm:ss a"
+                  },
+                  "timePlaceholder" : {
+                    "type" : "interpolation",
+                    "value" : "h:mm:ss a"
+                  },
+                  "showToday" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "todayLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Today"
+                  },
+                  "showNow" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "nowLabel" : {
+                    "type" : "interpolation",
+                    "value" : "Now"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  }
+                },
+                "reference" : "b2a1d52c-5772-417d-9682-db1d345a660a",
+                "hasValidationError" : false,
+                "id" : "pbDateTimePicker"
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 2,
+                  "lg" : 2
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "ce948364-8a11-4f6d-a97a-9766b0d0fb42",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 8,
+                  "lg" : 8
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "text-danger"
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "ctrl.isValid()"
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<h3 class=\"panel-title\">{{\"End date has to be later than start date\" | translate}}</h3>"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  }
+                },
+                "reference" : "1da4ed76-e51d-45e7-b81f-5fc8b47504ef",
+                "hasValidationError" : false,
+                "id" : "pbText"
+              },
+              {
+                "type" : "container",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 2,
+                  "lg" : 2
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "repeatedCollection" : {
+                    "type" : "variable",
+                    "value" : ""
+                  }
+                },
+                "reference" : "2715850d-19d6-480d-ac7e-46d694f182ba",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "rows" : [
+                  [ ]
+                ]
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "assets" : [ ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "ctrl" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    isValid:function(){",
+        "        return ((!$data.startDate && !$data.endDate) || ($data.startDate && $data.endDate && $data.endDate > $data.startDate));",
+        "    }",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "startDate" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    },
+    "endDate" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : true
+    }
+  },
+  "hasValidationError" : false,
+  "webResources" : [ ],
+  "type" : "fragment"
+}

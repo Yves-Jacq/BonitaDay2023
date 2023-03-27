@@ -1,0 +1,9 @@
+<label class="main-label">{{properties.mainLabel}}</label>
+<div class="wrapper col-xs-12">
+    <input type="radio" ng-model="properties.selectedValue" ng-value="properties.values[0]" name="choice_radio" id="left" checked="false">
+    <label for="left" id="left-lbl">{{properties.labels[0]}}</label>
+    <input type="radio" ng-model="properties.selectedValue" ng-value="properties.values[1]" name="choice_radio" id="middle" checked="true">
+    <label for="middle" id="middle-lbl">{{properties.labels[1]}}</label>    
+    <input type="radio" ng-model="properties.selectedValue" ng-value="properties.values[2]" name="choice_radio" id="right" checked="false">
+    <label for="right" id="right-lbl">{{properties.labels[2]}}</label>
+</div>

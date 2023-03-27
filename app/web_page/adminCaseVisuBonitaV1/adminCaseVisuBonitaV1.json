@@ -1,0 +1,432 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "id" : "adminCaseVisuBonitaV1",
+  "name" : "adminCaseVisuBonitaV1",
+  "lastUpdate" : 1679926578094,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Back"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "page"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "expression",
+            "value" : "backButtonCtrl. getApplicationPage()"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "52339168-8922-49ee-8d0f-e928bfec5527",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!invalidProcessRsp && !invalidCaseRsp"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{errorMessage}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "b3bf494a-8963-4aae-b410-1d3e293b26ae",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "invalidProcessRsp || invalidCaseRsp"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{diagramCtrl.getDiagramTitle()}}"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "74f2b2cc-d317-4bec-8b2d-1fcd71c20f38",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{headerMessage | uiTranslate}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "d6c18a57-e7b4-4f4d-9d55-e66612d5d92e",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "d-flex pr-0"
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "invalidProcessRsp || invalidCaseRsp"
+          }
+        },
+        "reference" : "7cfe1306-1035-436a-bf89-e5b18577d8d8",
+        "hasValidationError" : false,
+        "id" : "fragmentCaseVisuBonitaV1",
+        "binding" : {
+          "caseId" : "caseId"
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "76d89b21-6a30-46ca-a0fd-91c1ebdb2c5f",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a1057704-ca23-4eb6-ab72-96ee21c28965",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "backButtonCtrl" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    getApplicationPage() {",
+        "            return \"admin-case-list\";",
+        "    }",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "currentProcessUrl" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process/{{processId}}"
+      ],
+      "advancedOptions" : {
+        "statusCode" : "processRspStatus"
+      },
+      "exposed" : false
+    },
+    "urlId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "diagramCtrl" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    getDiagramTitle: function() {",
+        "        if (!$data.caseId || !$data.currentProcessUrl) {",
+        "            return \"\";",
+        "        }",
+        "",
+        "        let diagramTitle = uiTranslate(\"Case ID\") + \": \" + $data.caseId + \" - \";",
+        "        diagramTitle += uiTranslate(\"Process\") + \": \" + $data.currentProcessUrl.displayName + \" (\" + $data.currentProcessUrl.version + \")\";",
+        "        ",
+        "        return diagramTitle;",
+        "    }",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "caseId" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.urlId || $data.urlId === \"\") {",
+        "    return undefined;",
+        "}",
+        "",
+        "const ids = $data.urlId.split(\"-\");",
+        "",
+        "if (ids.length != 2) {",
+        "    return undefined;",
+        "}",
+        "",
+        "return ids[1];"
+      ],
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.urlId || $data.urlId === \"\") {",
+        "    return undefined;",
+        "}",
+        "",
+        "const ids = $data.urlId.split(\"-\");",
+        "",
+        "return ids[0];"
+      ],
+      "exposed" : false
+    },
+    "currentCaseUrl" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/case/{{caseId}}"
+      ],
+      "advancedOptions" : {
+        "statusCode" : "caseRspStatus"
+      },
+      "exposed" : false
+    },
+    "errorMessage" : {
+      "type" : "expression",
+      "value" : [
+        "let header = '<div class=\"alert alert-info\" translate><i class=\"glyphicon glyphicon-info-sign\" aria-hidden=\"true\"></i> ';",
+        "let cannotDisplay = uiTranslate(\"Cannot display BPMN diagram.\");",
+        "",
+        "if ($data.invalidProcessRsp) {",
+        "    if (!$data.processId) {",
+        "        return  header + cannotDisplay + \"&nbsp;\" + uiTranslate(\"Process id is missing.\") + \"</div>\";",
+        "    }",
+        "    return  header + cannotDisplay + uiTranslate(\"No process found with id:\") + \"&nbsp;<b>\" + $data.processId + \"</b></div>\";",
+        "}",
+        "",
+        "if ($data.invalidCaseRsp) {",
+        "    if (!$data.caseId) {",
+        "        return  header + cannotDisplay + uiTranslate(\"Case id is missing.\") + \"</div>\";",
+        "    }",
+        "    return  header + cannotDisplay + uiTranslate(\"No case found with id:\") + \"&nbsp;<b>\" + $data.caseId + \"</b></div>\";",
+        "}",
+        "",
+        "return \"\";"
+      ],
+      "exposed" : false
+    },
+    "invalidProcessRsp" : {
+      "type" : "expression",
+      "value" : [
+        "return !$data.processId || $data.processRspStatus != 200;"
+      ],
+      "exposed" : false
+    },
+    "invalidCaseRsp" : {
+      "type" : "expression",
+      "value" : [
+        "return !$data.caseId || ($data.caseRspStatus !== 200 && $data.currentArchivedCaseUrl && $data.currentArchivedCaseUrl.length === 0);"
+      ],
+      "exposed" : false
+    },
+    "caseRspStatus" : {
+      "type" : "constant",
+      "value" : [
+        "200"
+      ],
+      "exposed" : false
+    },
+    "processRspStatus" : {
+      "type" : "constant",
+      "value" : [
+        "200"
+      ],
+      "exposed" : false
+    },
+    "headerMessage" : {
+      "type" : "constant",
+      "value" : [
+        "This page displays current and past activity on this case flow nodes."
+      ],
+      "exposed" : false
+    },
+    "currentArchivedCaseUrl" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/archivedCase/?f=sourceObjectId={{caseId}}"
+      ],
+      "advancedOptions" : { },
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "webResources" : [ ],
+  "uuid" : "a45329f9-9efc-46dc-94dd-08c1aa4a154a",
+  "type" : "page",
+  "description" : "This page provides the BPMN visualization of a process with the execution status of a case. It is dedicated to Admin-like profiles. You can export it and edit it in the UI Designer. This page can only be used as an orphan page as it needs an 'id' parameter to display some content.",
+  "displayName" : "Bonita Admin Case Visualization"
+}

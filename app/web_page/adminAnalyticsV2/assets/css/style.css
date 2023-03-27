@@ -1,0 +1,144 @@
+/* Add margin bottom and top to each widgets */
+.component {
+    margin-bottom: 3px;
+    margin-top: 3px;
+}
+
+/* Set cursor to pointer on table with selectable rows */
+.table-hover tr {
+    cursor: pointer;
+}
+
+/* Set a red border to invalid input fields in forms */
+input[type='text'].ng-invalid.ng-dirty, input[type='email'].ng-invalid.ng-dirty,
+input[type='number'].ng-invalid.ng-dirty, input[type='password'].ng-invalid.ng-dirty {
+  border-color: #C00;
+  border-width: 1px;
+}
+
+/* Add a red star after required inputs */
+.control-label--required:after {
+  content: " *";
+  color: #C00;
+}
+.btn-invalid{
+    border-color: #C00;
+    border-width: 1px;
+}
+
+.bonita-modal{
+    overflow-y: auto;
+}
+
+.modal-open .datepicker,
+.modal-open .timepicker {
+    z-index: 9999;
+}
+
+/* Vertical tab container */
+@media (min-width:  768px) {
+    .tab-vertical .nav {
+        float: left;
+        width: 20%;
+    }
+
+    .tab-vertical .tab-content {
+        float: left;
+        width: 80%;
+    }
+}
+
+/* Custom CSS */
+.p-8 {
+    padding: 8px;
+}
+
+.pt-22 {
+    padding-top: 22px;
+}
+
+.mt-5 h3 {
+    margin-top: 5px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.no-text-decoration .btn-link:hover,
+.no-text-decoration .btn-link:active, 
+.no-text-decoration .btn-link:focus, 
+.no-text-decoration .btn-link:visited {
+    text-decoration: none;
+}
+
+pb-fragment-date-range-frag pb-select .form-group {
+    display: inline-flex;
+}
+
+.last-deployed-version {
+    position: relative;
+    bottom: 5px;
+}
+
+.date-range-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+pb-data-table thead tr th:last-child {
+    text-align: center;
+}
+
+pb-data-table tbody tr td:last-child {
+    text-align: center;
+    padding-left: 0;
+}
+
+pb-data-table .pagination {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.date-time-input .input-group input {
+    padding-left: 5px;
+    padding-right: 2px;
+    font-size: 13px;
+}
+
+.period-interval-title {
+    font-weight: 600;
+    padding-top: 15px;
+}
+
+.page-title {
+    padding-left: 4.7%;
+}
+
+.btn-back button {
+    font-size: 16px;
+}
+
+/* Spinner */
+.glyphicon-cog {
+    -webkit-animation: spin 2s infinite linear;
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+}
+
+@keyframes spin{
+  0%{
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100%{
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

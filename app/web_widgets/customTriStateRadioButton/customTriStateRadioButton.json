@@ -1,0 +1,51 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Selected value",
+      "name" : "selectedValue",
+      "help" : "The value that is selected",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Labels",
+      "name" : "labels",
+      "help" : "List of 3 labels (ex: [first, second, third])",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Values",
+      "name" : "values",
+      "help" : "List of 3 values. (ex: [first, second, third])",
+      "type" : "text",
+      "bond" : "expression"
+    },
+    {
+      "label" : "MainLabel",
+      "name" : "mainLabel",
+      "type" : "text",
+      "bond" : "interpolation"
+    }
+  ],
+  "id" : "customTriStateRadioButton",
+  "name" : "TriStateRadioButton",
+  "lastUpdate" : 1679927019588,
+  "template" : "@customTriStateRadioButton.tpl.html",
+  "controller" : "@customTriStateRadioButton.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "c0bc156e-b944-4e05-a0e5-315926eeaec3",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 1,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

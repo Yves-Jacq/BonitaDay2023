@@ -1,0 +1,77 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "properties" : [
+    {
+      "label" : "Diagram",
+      "name" : "diagram",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Flow nodes info",
+      "name" : "flowNodesInfo",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Process name",
+      "name" : "processName",
+      "help" : "Name of the process to display",
+      "type" : "text",
+      "bond" : "variable"
+    },
+    {
+      "label" : "Active features",
+      "name" : "activeFeatures",
+      "type" : "text",
+      "bond" : "variable"
+    }
+  ],
+  "id" : "customBpmnVisuV1",
+  "name" : "bpmnVisuV1",
+  "lastUpdate" : 1678382886186,
+  "template" : "@customBpmnVisuV1.tpl.html",
+  "controller" : "@customBpmnVisuV1.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "4800e67b-d845-4f7c-b171-f9426e12df8b",
+      "name" : "tippy.css",
+      "type" : "css",
+      "order" : 5,
+      "external" : false
+    },
+    {
+      "id" : "a8de6113-a929-45c6-83a2-2a7a0d7ab1af",
+      "name" : "popper.min.js",
+      "type" : "js",
+      "order" : 4,
+      "external" : false
+    },
+    {
+      "id" : "09da5c53-e1f0-4d96-bc8c-88268e7a85df",
+      "name" : "bpmn-visualization-0.25.0.min.js",
+      "type" : "js",
+      "order" : 7,
+      "external" : false
+    },
+    {
+      "id" : "3c2dd89e-b60f-4b64-a73d-accf9821c282",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "a993fa9d-c4b3-4fdc-923a-69257a215c84",
+      "name" : "tippy-bundle.umd.min.js",
+      "type" : "js",
+      "order" : 6,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

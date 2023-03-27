@@ -1,0 +1,23 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "properties" : [
+    {
+      "label" : "URL Parameters",
+      "name" : "params",
+      "type" : "text",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customURLSearchParams",
+  "name" : "URLSearchParams",
+  "lastUpdate" : 1678382747294,
+  "template" : "@customURLSearchParams.tpl.html",
+  "controller" : "@customURLSearchParams.ctrl.js",
+  "description" : "Update the URL search parameters with the given `params` property",
+  "custom" : true,
+  "assets" : [ ],
+  "requiredModules" : [ ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,129 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.2",
+  "properties" : [
+    {
+      "label" : "Type",
+      "name" : "type",
+      "help" : "A multiple set chart shows one or more set of data",
+      "type" : "choice",
+      "defaultValue" : "Doughnut",
+      "choiceValues" : [
+        {
+          "group" : "Single set charts",
+          "value" : "doughnut",
+          "label" : "Doughnut"
+        },
+        {
+          "group" : "Single set charts",
+          "value" : "pie",
+          "label" : "Pie"
+        },
+        {
+          "group" : "Single set charts",
+          "value" : "polarArea",
+          "label" : "Polar Area"
+        },
+        {
+          "group" : "Multiple set charts",
+          "value" : "bar",
+          "label" : "Bar"
+        },
+        {
+          "group" : "Multiple set charts",
+          "value" : "line",
+          "label" : "Line"
+        },
+        {
+          "group" : "Multiple set charts",
+          "value" : "radar",
+          "label" : "Radar"
+        }
+      ],
+      "bond" : "constant"
+    },
+    {
+      "label" : "Data",
+      "name" : "data",
+      "caption" : "Comma-separated list or variable",
+      "help" : "A variable that contains a JSON array (single set) or JSON array of arrays (multiple sets) where each array is a set. The data can be obtained by a BDM query, API call (default or extension), or JavaScript that retrieves and formats external data",
+      "type" : "collection",
+      "defaultValue" : [
+        65,
+        59,
+        80,
+        81,
+        56,
+        55,
+        40
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Labels",
+      "name" : "labels",
+      "help" : "The scale labels for the x-axis for line and bar charts, ray labels for a radar chart, sector labels for single set charts",
+      "type" : "collection",
+      "defaultValue" : [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July"
+      ],
+      "bond" : "expression"
+    },
+    {
+      "label" : "Set labels",
+      "name" : "setLabels",
+      "caption" : "Comma-separated list",
+      "help" : "The label of each set When using multiple sets",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Colors",
+      "name" : "colors",
+      "caption" : "For example #FF0000, #0066FF",
+      "help" : "The hex codes for the sector colors for single set charts, or for the set colors for multiple set charts. If not specified, default colors are used",
+      "type" : "collection",
+      "bond" : "expression"
+    },
+    {
+      "label" : "Advanced options",
+      "name" : "options",
+      "caption" : "See <a href=\"https://github.com/chartjs/Chart.js/tree/v1.0.2/docs\" target=\"_blank\">chart.js</a> for details of the chart options for each type of chart. Specify a JSON structure corresponding to the options you want",
+      "type" : "text",
+      "bond" : "expression"
+    }
+  ],
+  "id" : "customChartJs2x",
+  "name" : "chartJs2x",
+  "lastUpdate" : 1679927019629,
+  "template" : "@customChartJs2x.tpl.html",
+  "controller" : "@customChartJs2x.ctrl.js",
+  "custom" : true,
+  "assets" : [
+    {
+      "id" : "77f77d0f-17da-4afd-87ac-da6ce40cd0b6",
+      "name" : "chart.js",
+      "type" : "js",
+      "order" : 2,
+      "external" : false
+    },
+    {
+      "id" : "38ffe1ea-017c-4a17-b0dc-8fc956796078",
+      "name" : "angular-chart.min.js",
+      "type" : "js",
+      "order" : 3,
+      "external" : false
+    }
+  ],
+  "requiredModules" : [
+    "chart.js"
+  ],
+  "type" : "widget",
+  "hasHelp" : false
+}

@@ -1,0 +1,50 @@
+.main-label {
+    padding: 5px 0;
+}
+
+.wrapper {
+    position: relative;
+    border: 1px solid #ccc;
+    height: 34px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.wrapper label {
+    cursor: pointer;
+    z-index: 1;
+    line-height: 3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    font-weight: 400;
+    text-align: center;
+}
+
+.wrapper input {
+    position: absolute;
+    opacity: 0;
+}
+
+.wrapper input:checked + label {
+    color: #fff;
+    background: #2c3e50;
+    font-weight: 600;
+}
+
+#left, #left-lbl {
+    width: 33%;
+}
+
+#middle, #middle-lbl {
+    width: 33%;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+#right, #right-lbl {
+    width: 33%;
+}

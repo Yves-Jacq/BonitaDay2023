@@ -1,0 +1,57 @@
+.bpmn-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /* use absolute values for width and height to ensure that the diagram is not fully displayed when the page is opened. */
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    border: 1px solid #E8E8E8;
+    /* this ensures we get scrollbars */
+    /*overflow: auto;*/
+    /* Disable scrollbars for now: see https://github.com/process-analytics/bpmn-visualization-js/issues/1979 */
+    overflow: hidden;
+}
+
+.zoom-btns-container  {
+    display: flex;
+    flex-direction: row;
+}
+
+.zoom-btns-container > button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.zoom-btn {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.box {
+    float: left;
+    height: 15px;
+    width: 15px;
+    border: 1px solid black;
+    clear: both;
+    margin-top: 2px;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.black {
+    background-color: black;
+}
+
+.grey {
+    background-color: grey;
+}

@@ -1,0 +1,372 @@
+{
+  "modelVersion" : "2.4",
+  "previousArtifactVersion" : "2.3",
+  "id" : "adminProcessVisuBonitaV1",
+  "name" : "adminProcessVisuBonitaV1",
+  "lastUpdate" : 1679926578337,
+  "rows" : [
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "Back"
+          },
+          "type" : {
+            "type" : "constant",
+            "value" : "page"
+          },
+          "targetUrl" : {
+            "type" : "constant",
+            "value" : "http://"
+          },
+          "pageToken" : {
+            "type" : "expression",
+            "value" : "backButtonCtrl. getApplicationPage()"
+          },
+          "processName" : {
+            "type" : "constant"
+          },
+          "processVersion" : {
+            "type" : "constant"
+          },
+          "taskId" : {
+            "type" : "constant"
+          },
+          "caseId" : {
+            "type" : "constant"
+          },
+          "target" : {
+            "type" : "constant",
+            "value" : "_self"
+          },
+          "appToken" : {
+            "type" : "constant"
+          },
+          "urlParams" : {
+            "type" : "constant"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "buttonStyle" : {
+            "type" : "constant",
+            "value" : "primary"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "0214172c-3fe1-442f-ae64-e8d5a06e64c7",
+        "hasValidationError" : false,
+        "id" : "pbLink"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!invalidProcessResponse && processId"
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{errorMessage}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "74311f38-1740-4a3c-922f-7b8e3dd472d1",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!currentProcessUrl"
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{diagramCtrl.getDiagramTitle()}}"
+          },
+          "level" : {
+            "type" : "constant",
+            "value" : "Level 3"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          }
+        },
+        "reference" : "050c3353-90e2-472e-8ed9-ff315b985be7",
+        "hasValidationError" : false,
+        "id" : "pbTitle"
+      }
+    ],
+    [
+      {
+        "type" : "component",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          },
+          "labelHidden" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "label" : {
+            "type" : "interpolation",
+            "value" : "Default label"
+          },
+          "labelPosition" : {
+            "type" : "constant",
+            "value" : "top"
+          },
+          "labelWidth" : {
+            "type" : "constant",
+            "value" : 4
+          },
+          "allowHTML" : {
+            "type" : "constant",
+            "value" : true
+          },
+          "text" : {
+            "type" : "interpolation",
+            "value" : "{{headerMessage | uiTranslate}}"
+          },
+          "alignment" : {
+            "type" : "constant",
+            "value" : "left"
+          }
+        },
+        "reference" : "4d894d4e-4352-423b-a794-ba744535a0a4",
+        "hasValidationError" : false,
+        "id" : "pbText"
+      }
+    ],
+    [
+      {
+        "type" : "fragment",
+        "dimension" : {
+          "xs" : 12,
+          "sm" : 12,
+          "md" : 12,
+          "lg" : 12
+        },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : "d-flex pr-0"
+          },
+          "hidden" : {
+            "type" : "expression",
+            "value" : "!currentProcessUrl"
+          }
+        },
+        "reference" : "16cd3e2c-cdde-4879-867a-2522398ebf43",
+        "hasValidationError" : false,
+        "id" : "fragmentProcessVisuBonitaV1",
+        "binding" : {
+          "processId" : "processId"
+        }
+      }
+    ]
+  ],
+  "assets" : [
+    {
+      "id" : "76d89b21-6a30-46ca-a0fd-91c1ebdb2c5f",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a1057704-ca23-4eb6-ab72-96ee21c28965",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "variables" : {
+    "backButtonCtrl" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    getApplicationPage() {",
+        "        return \"admin-monitoring\";",
+        "    }",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "currentProcessUrl" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/process/{{processId}}"
+      ],
+      "advancedOptions" : {
+        "statusCode" : "processResponseStatus"
+      },
+      "exposed" : false
+    },
+    "urlId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
+    },
+    "diagramCtrl" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "    getDiagramTitle: function() {",
+        "        if (!$data.currentProcessUrl) {",
+        "            return \"\";",
+        "        }",
+        "        return uiTranslate(\"Process\") + \": \" + $data.currentProcessUrl.displayName + \" (\" + $data.currentProcessUrl.version + \")\";",
+        "    }",
+        "};"
+      ],
+      "exposed" : false
+    },
+    "processId" : {
+      "type" : "expression",
+      "value" : [
+        "if (!$data.urlId || $data.urlId === \"\") {",
+        "    return undefined;",
+        "}",
+        "",
+        "return $data.urlId;"
+      ],
+      "exposed" : false
+    },
+    "invalidProcessResponse" : {
+      "type" : "expression",
+      "value" : [
+        "return !$data.processId || $data.processResponseStatus !== 200;"
+      ],
+      "exposed" : false
+    },
+    "errorMessage" : {
+      "type" : "expression",
+      "value" : [
+        "",
+        "let header = '<div class=\"alert alert-info\" translate><i class=\"glyphicon glyphicon-info-sign\" aria-hidden=\"true\"></i> ';",
+        "let cannotDisplay = uiTranslate(\"Cannot display BPMN diagram.\");",
+        "",
+        "if (!$data.processId) {",
+        "    return  header + cannotDisplay + \"&nbsp;\" + uiTranslate(\"Process id is missing.\") + \"</div>\";",
+        "}",
+        "",
+        "if ($data.invalidProcessResponse) {",
+        "    return  header + cannotDisplay + \"&nbsp;\" + uiTranslate(\"No process found with id:\") + \"&nbsp;<b>\" + $data.processId + \"</b></div>\";",
+        "}",
+        "",
+        "return \"\";"
+      ],
+      "exposed" : false
+    },
+    "headerMessage" : {
+      "type" : "constant",
+      "value" : [
+        "This page displays the active flow nodes of all open cases of the process."
+      ],
+      "exposed" : false
+    },
+    "processResponseStatus" : {
+      "type" : "constant",
+      "value" : [
+        "200"
+      ],
+      "exposed" : false
+    }
+  },
+  "hasValidationError" : false,
+  "webResources" : [ ],
+  "uuid" : "276c71b7-6672-42ae-833d-8887a1593cf0",
+  "type" : "page",
+  "description" : "This page provides the BPMN visualization of a process with the execution data of all open cases of the process. It is dedicated to Admin-like profiles. You can export it and edit it in the UI Designer. This page can only be used as an orphan page as it needs an 'id' parameter to display some content.",
+  "displayName" : "Bonita Admin Process Visualization"
+}

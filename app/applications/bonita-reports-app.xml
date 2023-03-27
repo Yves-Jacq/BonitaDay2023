@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<applications xmlns="http://documentation.bonitasoft.com/application-xml-schema/1.0">
+    <application token="reportsBonita" version="1.0" profile="User" homePage="reports" state="ACTIVATED" layout="custompage_layoutBonita" theme="custompage_themeBonita">
+        <displayName>Bonita Reports Application</displayName>
+        <applicationPages>
+            <applicationPage customPage="custompage_adminAnalyticsV2" token="reports"/>
+            <applicationPage customPage="custompage_adminCaseVisuBonita" token="case-visu"/>
+        </applicationPages>
+        <applicationMenus/>
+    </application>
+</applications>
