@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_tRLCkJD7Ee2_w91HG-paQg" name="ProjetPret" version="1.1.1" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_tRLCkZD7Ee2_w91HG-paQg" name="Demande de prêt" version="1.1.1">
       <elements xmi:type="process:Lane" xmi:id="_tRLCkpD7Ee2_w91HG-paQg" name="Client" actor="_EdZUwJEAEe2_w91HG-paQg">
@@ -1577,6 +1577,58 @@
       <actors xmi:type="process:Actor" xmi:id="_jczosJD_Ee2_w91HG-paQg" name="Etat"/>
       <actors xmi:type="process:Actor" xmi:id="_kJr80JD_Ee2_w91HG-paQg" name="Banquier"/>
       <actors xmi:type="process:Actor" xmi:id="_EdZUwJEAEe2_w91HG-paQg" name="Client" initiator="true"/>
+      <configurations xmi:type="configuration:Configuration" xmi:id="_rdolgMydEe2CHaqr_UX_DQ" name="Qualification" version="7.12.0-004" username="william.jobs">
+        <actorMappings xmi:type="actormapping:ActorMappingsType" xmi:id="_reaBkMydEe2CHaqr_UX_DQ">
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_reaooMydEe2CHaqr_UX_DQ" name="Etat">
+            <groups xmi:type="actormapping:Groups" xmi:id="_reaoocydEe2CHaqr_UX_DQ">
+              <group>/Etat</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_reaoosydEe2CHaqr_UX_DQ">
+              <membership xmi:type="actormapping:MembershipType" xmi:id="_12CjwMydEe2CHaqr_UX_DQ" group="/Etat" role="member"/>
+            </memberships>
+            <roles xmi:type="actormapping:Roles" xmi:id="_reaoo8ydEe2CHaqr_UX_DQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_reaopMydEe2CHaqr_UX_DQ">
+              <user>anthony.nichols</user>
+            </users>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_reaopcydEe2CHaqr_UX_DQ" name="Banquier">
+            <groups xmi:type="actormapping:Groups" xmi:id="_reaopsydEe2CHaqr_UX_DQ">
+              <group>/Banque</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_reaop8ydEe2CHaqr_UX_DQ">
+              <membership xmi:type="actormapping:MembershipType" xmi:id="_12GOIMydEe2CHaqr_UX_DQ" group="/Banque" role="member"/>
+            </memberships>
+            <roles xmi:type="actormapping:Roles" xmi:id="_reaoqMydEe2CHaqr_UX_DQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_reaoqcydEe2CHaqr_UX_DQ">
+              <user>april.sanchez</user>
+            </users>
+          </actorMapping>
+          <actorMapping xmi:type="actormapping:ActorMapping" xmi:id="_reaoqsydEe2CHaqr_UX_DQ" name="Client">
+            <groups xmi:type="actormapping:Groups" xmi:id="_reaoq8ydEe2CHaqr_UX_DQ">
+              <group>/Clients</group>
+            </groups>
+            <memberships xmi:type="actormapping:Membership" xmi:id="_reaorMydEe2CHaqr_UX_DQ">
+              <membership xmi:type="actormapping:MembershipType" xmi:id="_12G1MMydEe2CHaqr_UX_DQ" group="/Clients" role="member"/>
+            </memberships>
+            <roles xmi:type="actormapping:Roles" xmi:id="_reaorcydEe2CHaqr_UX_DQ"/>
+            <users xmi:type="actormapping:Users" xmi:id="_reaorsydEe2CHaqr_UX_DQ">
+              <user>daniela.angelo</user>
+            </users>
+          </actorMapping>
+        </actorMappings>
+        <definitionMappings xmi:type="configuration:DefinitionMapping" xmi:id="_rdrBwMydEe2CHaqr_UX_DQ" type="CONNECTOR" definitionId="email" definitionVersion="1.2.0" implementationId="email-impl" implementationVersion="1.3.0"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rdro0MydEe2CHaqr_UX_DQ" id="CONNECTOR">
+          <children xmi:type="configuration:FragmentContainer" xmi:id="_rdsP4MydEe2CHaqr_UX_DQ" id="email-impl-1.3.0">
+            <fragments xmi:type="configuration:Fragment" xmi:id="_rdsP4cydEe2CHaqr_UX_DQ" key="email-impl -- 1.3.0" value="bonita-connector-email-1.3.0.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_rdsP4sydEe2CHaqr_UX_DQ" key="email-impl -- 1.3.0" value="javax.mail-1.6.2.jar" type="CONNECTOR"/>
+            <fragments xmi:type="configuration:Fragment" xmi:id="_rdsP48ydEe2CHaqr_UX_DQ" key="email-impl -- 1.3.0" value="javax.mail-api-1.6.2.jar" type="CONNECTOR"/>
+          </children>
+        </processDependencies>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rdsP5MydEe2CHaqr_UX_DQ" id="GROOVY_SCRIPT"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rdsP5cydEe2CHaqr_UX_DQ" id="ACTOR_FILTER"/>
+        <processDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rdsP5sydEe2CHaqr_UX_DQ" id="OTHER"/>
+        <applicationDependencies xmi:type="configuration:FragmentContainer" xmi:id="_rdsP58ydEe2CHaqr_UX_DQ" id="GROOVY_SCRIPT"/>
+      </configurations>
       <contract xmi:type="process:Contract" xmi:id="_tRLGzZD7Ee2_w91HG-paQg">
         <inputs xmi:type="process:ContractInput" xmi:id="_tRLGzpD7Ee2_w91HG-paQg" name="dossierPretInput" type="COMPLEX" dataReference="dossierPret">
           <inputs xmi:type="process:ContractInput" xmi:id="_tRLGz5D7Ee2_w91HG-paQg" name="type_pret"/>
