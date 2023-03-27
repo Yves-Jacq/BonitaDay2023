@@ -1433,7 +1433,7 @@
       <formMapping xmi:type="process:FormMapping" xmi:id="_tRLGY5D7Ee2_w91HG-paQg">
         <targetForm xmi:type="expression:Expression" xmi:id="_tRLGZJD7Ee2_w91HG-paQg" name="SaisirDemande" content="53a12fc4-1f4f-4611-b41d-537e3be710e9" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
-      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_tRLGZZD7Ee2_w91HG-paQg">
+      <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_tRLGZZD7Ee2_w91HG-paQg" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_tRLGZpD7Ee2_w91HG-paQg" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_tRLGZ5D7Ee2_w91HG-paQg" target="_tRLCl5D7Ee2_w91HG-paQg" source="_tRLCk5D7Ee2_w91HG-paQg">
