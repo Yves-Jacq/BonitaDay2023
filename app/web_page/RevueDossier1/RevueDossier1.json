@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.3",
   "id" : "RevueDossier1",
   "name" : "RevueDossier1",
-  "lastUpdate" : 1679392996209,
+  "lastUpdate" : 1679992308443,
   "rows" : [
     [
       {
@@ -598,6 +598,50 @@
                         "lg" : 6
                       },
                       "propertyValues" : {
+                        "showPreview" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "document" : {
+                          "type" : "variable",
+                          "value" : "context.carteId_ref"
+                        },
+                        "type" : {
+                          "type" : "constant",
+                          "value" : "Process document"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        },
+                        "url" : {
+                          "type" : "constant"
+                        }
+                      },
+                      "reference" : "dc701c89-a7a2-4a7b-afd8-7b8dcf904fcd",
+                      "hasValidationError" : false,
+                      "id" : "pbFileViewer",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 6,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 6
+                      },
+                      "propertyValues" : {
                         "hidden" : {
                           "type" : "constant",
                           "value" : false
@@ -630,50 +674,6 @@
                       "reference" : "d5c7f8d5-7767-4c2c-965d-1f0b0de9cb39",
                       "hasValidationError" : false,
                       "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.carteId_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "dc701c89-a7a2-4a7b-afd8-7b8dcf904fcd",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
                       "description" : ""
                     },
                     {
@@ -714,213 +714,6 @@
                         }
                       },
                       "reference" : "da1ead6c-37e0-4bdf-a84d-11a972e2275b",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "07ca13b2-811d-4ec2-a9c8-49a87e36e1a8",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Bulletin de salaire m-1"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "11e2e05b-a7e0-43ee-aee5-0ae7cce340f5",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Bulletin de salaire m-2"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "d51e016f-ff60-4f13-ba35-5cd9b9687870",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.bulletin_m_1_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "b1baa4e0-e6c5-4b6e-8066-4505085ba3ce",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.bulletin_m_2_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "f78c9c6a-8a0d-4123-aaaf-deeb671206a7",
                       "hasValidationError" : false,
                       "id" : "pbFileViewer",
                       "description" : ""
@@ -1012,51 +805,6 @@
                         "lg" : 6
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Avis d'imposition de l'année n-2"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "c42f12ac-0855-41c8-a233-3c226551c6d1",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
                         "showPreview" : {
                           "type" : "constant",
                           "value" : false
@@ -1086,48 +834,6 @@
                         }
                       },
                       "reference" : "b666f88f-f77c-43b9-9f90-1faa25ff5cab",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.avis_n_2_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "e8843509-c498-4178-a6b4-39d769e2c4f2",
                       "hasValidationError" : false,
                       "id" : "pbFileViewer",
                       "description" : ""
@@ -1219,51 +925,6 @@
                         "lg" : 6
                       },
                       "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Justificatif de situation familiale"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "532dc03a-fe51-498f-af51-9737459523f7",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
                         "showPreview" : {
                           "type" : "constant",
                           "value" : false
@@ -1293,170 +954,6 @@
                         }
                       },
                       "reference" : "4c51f2ea-343b-4adc-bf5c-d836e69dee53",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
-                      "description" : ""
-                    },
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 6,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 6
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.justif_situation_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "d7ece26b-6d57-4555-8445-f1e47ff63b61",
-                      "hasValidationError" : false,
-                      "id" : "pbFileViewer",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "de45dc91-9bc1-4b43-9150-a04bbb1dec04",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "level" : {
-                          "type" : "constant",
-                          "value" : "Level 4"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "Justificatif de domicile"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        }
-                      },
-                      "reference" : "e7555fb4-b327-4670-a9ce-7b7daedba68c",
-                      "hasValidationError" : false,
-                      "id" : "pbTitle",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "showPreview" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "document" : {
-                          "type" : "variable",
-                          "value" : "context.justif_domicile_ref"
-                        },
-                        "type" : {
-                          "type" : "constant",
-                          "value" : "Process document"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "url" : {
-                          "type" : "constant"
-                        }
-                      },
-                      "reference" : "ad761294-247c-428a-bdf9-534fae6f79a2",
                       "hasValidationError" : false,
                       "id" : "pbFileViewer",
                       "description" : ""

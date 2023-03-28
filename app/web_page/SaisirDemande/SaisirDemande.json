@@ -3,7 +3,7 @@
   "previousArtifactVersion" : "2.3",
   "id" : "SaisirDemande",
   "name" : "SaisirDemande",
-  "lastUpdate" : 1679392996328,
+  "lastUpdate" : 1679992399100,
   "rows" : [
     [
       {
@@ -11,7 +11,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "25ee0fd9-3978-408a-a5e2-3ebfd7d80fc4",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -568,7 +577,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
@@ -583,208 +592,6 @@
                         }
                       },
                       "reference" : "e05977df-1c73-4dd6-97e6-d4e931811eb6",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "c92af9aa-8a3c-4930-b726-db3b5a2c63d7",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Bulletin de salaire m-1"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.bulletin_m_1"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "3c5639ad-3814-4a4f-bc09-477a051f2b11",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "c980e9f6-987c-4de8-b353-a636406f3b5f",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Bulletin de salaire m-2"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.bulletin_m_2"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "8f8ef075-2099-4906-b8c4-9c91a2e09171",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
@@ -871,7 +678,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
@@ -886,107 +693,6 @@
                         }
                       },
                       "reference" : "0413872f-ee18-4f27-a013-f0df0785ad92",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "c4a4ca3c-8398-4784-a99f-4422286817a2",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Avis d'imposition de l'année n-1"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.avis_n_2"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "ec9f274c-7c0a-48a1-867c-519f1ba58ad2",
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
@@ -1073,7 +779,7 @@
                         },
                         "required" : {
                           "type" : "constant",
-                          "value" : true
+                          "value" : false
                         },
                         "url" : {
                           "type" : "constant",
@@ -1091,260 +797,6 @@
                       "hasValidationError" : false,
                       "id" : "pbUpload",
                       "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "ec8272df-d6cb-4883-af44-41d8d85c1fd1",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Justificatif de situation familiale : (livret de mariage, certificat de pacs, livret de famille)"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.justif_situation"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "69684560-c641-4aad-98fa-2b815c6c8d83",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ]
-                ]
-              }
-            ],
-            [
-              {
-                "type" : "container",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "repeatedCollection" : {
-                    "type" : "variable"
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  }
-                },
-                "reference" : "4d338f97-ac9f-476d-a9a3-ffdce2d57c65",
-                "hasValidationError" : false,
-                "id" : "pbContainer",
-                "rows" : [
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Justificatif de domicile ( facture de téléphone, d’eau ou d’électricité)"
-                        },
-                        "placeholder" : {
-                          "type" : "constant",
-                          "value" : "Browse to upload a new file..."
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        },
-                        "value" : {
-                          "type" : "variable",
-                          "value" : "formInput.justif_domicile"
-                        },
-                        "required" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "url" : {
-                          "type" : "constant",
-                          "value" : "../API/formFileUpload"
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "errorContent" : {
-                          "type" : "variable"
-                        }
-                      },
-                      "reference" : "54f40e40-66e5-4bf3-8bc9-cbf0fc68809c",
-                      "hasValidationError" : false,
-                      "id" : "pbUpload",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "xs" : 12,
-                        "sm" : 12,
-                        "md" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "hidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "allowHTML" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Default label"
-                        },
-                        "labelPosition" : {
-                          "type" : "constant",
-                          "value" : "top"
-                        },
-                        "labelWidth" : {
-                          "type" : "constant",
-                          "value" : 4
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "<I> ​Si vous êtes logé gratuitement et que vous ne pouvez présenter de facture, une attestation de la personne qui vous héberge sera nécessaire</I>"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        }
-                      },
-                      "reference" : "8656d983-5be8-470d-aff9-6b59b4891f8a",
-                      "hasValidationError" : false,
-                      "id" : "pbText"
                     }
                   ]
                 ]
